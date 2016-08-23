@@ -5,10 +5,11 @@ const app = document.getElementById('app');
 class App extends React.Component{
     render(){
         return (
-            <h1>Reactific</h1>
+            <h1>I <Heart/> React</h1>
         );
     }
 }
+const Heart = () => <span className="glyphicon glyphicon-heart"></span>
 
 ReactDOM.render(<App/>,app);
 
