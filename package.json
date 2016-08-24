@@ -20,7 +20,7 @@
   "devDependencies": {},
   "scripts": {
     "dev": "webpack-dev-server --content-base src --inline --hot",
-    "prod": "webpack-dev-server --config ./webpack.prod.config.js --content-base build --inline --hot",
+    "build": "webpack --config ./webpack.prod.config.js --progress --colors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

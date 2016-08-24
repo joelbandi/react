@@ -31,9 +31,9 @@ module.exports = {
     ]
   },
   output: {
-    path: path.join(__dirname,'build'),
+    path: path.join(__dirname,'public'),
     filename: "index.min.js",
-    publicPath: '/build/'
+    publicPath: '/public/'
   },
   plugins:[
     new webpack.optimize.DedupePlugin(),
