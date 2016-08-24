@@ -2,6 +2,7 @@ import React from 'react';
 import Heading2 from './Heading2.jsx';
 import Slider from './Slider.jsx';
 import ReactDOM from 'react-dom';
+import Github from '../Github.jsx';
 class Part2 extends React.Component{
     constructor(){
         super();
@@ -28,6 +29,7 @@ class Part2 extends React.Component{
                 <Slider ref="red" update={this.update.bind(this)}/>
                 <Slider ref="green" update={this.update.bind(this)}/>
                 <Slider ref="blue" update={this.update.bind(this)}/>
+                <Github path="Part2"/>
             </div>   
         )
     }
