@@ -1,5 +1,5 @@
 {
-  "name": "react",
+  "name": "reactific",
   "version": "0.0.0",
   "description": "",
   "main": "webpack.config.js",
@@ -23,8 +23,10 @@
     "start": "node public/server.js",
     "dev": "webpack-dev-server --content-base src --inline --hot",
     "build": "webpack --config ./webpack.prod.config.js --progress --colors",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "git push heroku master",
+    "finalize":"npm run build && npm run deploy"
   },
-  "author": "",
+  "author": "Joel Bandi",
   "license": "MIT"
 }
