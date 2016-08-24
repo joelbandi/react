@@ -1,15 +1,19 @@
 import React from 'react';
-import First from './First.jsx';
-import Button from './Button.jsx';
+import Heading from './Heading.jsx';
+import Textcopy from './Textcopy.jsx';
 
-class Part1 extends React.Component {
-    render() {
+
+
+class Part2 extends React.Component{;
+    render(){
         return (
-                <div className="well">
-                    <First />
-                    <Button/>
-                </div>
+            <div id="Part1" className="well">
+                <Heading/>
+                <Textcopy text={this.props.text}/>
+            </div>
         );
     }
 }
-export default Part1;
+
+
+export default Part2;
