@@ -21,12 +21,16 @@ module.exports = {
         include: path.join(__dirname, 'src', 'styles','assets') 
       },
       { 
-        test: /\.jpg$/,
-        loader: 'file'
+        test: /\.(jpg)$/,
+        loader: 'url-loader?limit=8192' 
       },
       { 
         test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
         loader: 'file'
+      },
+      { 
+        test: /\.css$/,
+        loader: "style-loader!css-loader"
       }
     ]
   },
@@ -38,7 +42,7 @@ module.exports = {
   plugins:[
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false, minimize:true }),
+    new webpack.optimize.UglifyJsPlugin({ mangle: true, sourcemap: false, minimize:true }),
     new webpack.DefinePlugin({'process.env': {'NODE_ENV': JSON.stringify('production')}})
   ]
 }
