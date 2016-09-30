@@ -31,7 +31,7 @@
     "dev": "webpack-dev-server --content-base src --inline --hot",
     "build": "webpack --config ./webpack.prod.config.js --progress --colors",
     "deploy": "git push heroku master",
-    "finalize": "npm run build && git add . && git commit -am 'commited index.min.js' && npm run deploy"
+    "finalize": "npm run build && git add . && git commit -am 'commited index.min.js' && git push origin master && npm run deploy"
   },
   "author": "Joel Bandi",
   "license": "MIT"
