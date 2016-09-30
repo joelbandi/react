@@ -7,6 +7,8 @@ import Part2 from './components/Part2/Part2.jsx';
 import Part3 from './components/Part3/Part3.jsx';
 import Part4 from './components/Part4/Part4.jsx';
 import Part5 from './components/Part5/Part5.jsx';
+import Part6 from './components/Part6/Part6.jsx';
+
 
 
 
@@ -33,6 +35,7 @@ class Layout extends React.Component{
                     <Part3/>
                     <Part4/>
                     <Part5/>
+                    <Part6/>
                 </div>
             </div>
         );
